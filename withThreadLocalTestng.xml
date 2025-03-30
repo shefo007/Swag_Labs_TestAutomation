@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+    <test name="LoginTests" parallel="methods" thread-count="9">
+        <classes>
+            <class name="com.saucedemo.swagLabs.Features.LoginTests"/>
+        </classes>
+    </test> <!-- Test -->
+
+    <test name="AddToCartTests" parallel="methods" thread-count="4">
+        <classes>
+            <class name="com.saucedemo.swagLabs.Features.AddToCartTests"/>
+        </classes>
+    </test> <!-- Test -->
+
+    <test name="ShoppingCartTests" parallel="methods" thread-count="5">
+        <classes>
+            <class name="com.saucedemo.swagLabs.Features.ShoppingCartTests"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->

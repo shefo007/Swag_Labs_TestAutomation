@@ -1,0 +1,489 @@
+[DEBUG] - [30-03-2025 18:50:35] [main] [org.testng.TestNG] - suiteXmlPath: "C:\Users\Sheri\IdeaProjects\Swag_Labs_TestAutomation\withThreadLocalTestng.xml"
+[INFO] - [30-03-2025 18:50:40] [main] [com.saucedemo.swagLabs.listeners.TestNGListeners] - Test Execution starting
+[ERROR] - [30-03-2025 18:50:40] [main] [com.saucedemo.swagLabs.utils.FilesUtils] - 1 exception(s): [org.apache.commons.io.IOIndexedException: IOException #1: Cannot delete file: test-outputs\Logs\log_2025-03-30_18-50-34.log]
+[INFO] - [30-03-2025 18:50:40] [main] [org.testng.internal.Utils] - [TestNG] Running:
+  C:\Users\Sheri\IdeaProjects\Swag_Labs_TestAutomation\withThreadLocalTestng.xml
+
+[INFO] - [30-03-2025 18:50:41] [TestNG-test-LoginTests-2] [com.saucedemo.swagLabs.basetest.BaseTest] - Driver created on: chrome
+[INFO] - [30-03-2025 18:50:50] [TestNG-test-LoginTests-2] [com.saucedemo.swagLabs.basetest.BaseTest] - Opening chrome browser....
+[INFO] - [30-03-2025 18:50:52] [TestNG-test-LoginTests-1] [com.saucedemo.swagLabs.basetest.BaseTest] - Driver created on: chrome
+[INFO] - [30-03-2025 18:50:53] [TestNG-test-LoginTests-2] [com.saucedemo.swagLabs.listeners.TestNGListeners] - Test case: LG_02verifyLoginWithAnInvalidUsername passed
+[DEBUG] - [30-03-2025 18:50:54] [TestNG-test-LoginTests-2] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['inValidUsername']
+[INFO] - [30-03-2025 18:50:55] [TestNG-test-LoginTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be present.
+[INFO] - [30-03-2025 18:50:55] [TestNG-test-LoginTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be visible.
+[INFO] - [30-03-2025 18:50:56] [TestNG-test-LoginTests-2] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: jack_reacher in the field: By.id: user-name
+[DEBUG] - [30-03-2025 18:50:56] [TestNG-test-LoginTests-2] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validPassword']
+[INFO] - [30-03-2025 18:50:56] [TestNG-test-LoginTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be present.
+[INFO] - [30-03-2025 18:50:57] [TestNG-test-LoginTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be visible.
+[INFO] - [30-03-2025 18:50:58] [TestNG-test-LoginTests-2] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: secret_sauce in the field: By.id: password
+[INFO] - [30-03-2025 18:50:58] [TestNG-test-LoginTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be present.
+[INFO] - [30-03-2025 18:50:58] [TestNG-test-LoginTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be visible.
+[INFO] - [30-03-2025 18:50:58] [TestNG-test-LoginTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be clickable.
+[INFO] - [30-03-2025 18:50:58] [TestNG-test-LoginTests-2] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on By.id: login-button
+[INFO] - [30-03-2025 18:50:58] [TestNG-test-LoginTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: h3[data-test='error'] to be present.
+[INFO] - [30-03-2025 18:50:58] [TestNG-test-LoginTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: h3[data-test='error'] to be visible.
+[DEBUG] - [30-03-2025 18:50:59] [TestNG-test-LoginTests-2] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['invalidUsernameOrPassword']
+[INFO] - [30-03-2025 18:51:01] [TestNG-test-LoginTests-1] [com.saucedemo.swagLabs.basetest.BaseTest] - Opening chrome browser....
+[INFO] - [30-03-2025 18:51:03] [TestNG-test-LoginTests-8] [com.saucedemo.swagLabs.basetest.BaseTest] - Driver created on: chrome
+[INFO] - [30-03-2025 18:51:03] [TestNG-test-LoginTests-1] [com.saucedemo.swagLabs.listeners.TestNGListeners] - Test case: LG_01verifyLoginWithValidUsernameAndPassword passed
+[DEBUG] - [30-03-2025 18:51:03] [TestNG-test-LoginTests-1] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validUsername']
+[INFO] - [30-03-2025 18:51:03] [TestNG-test-LoginTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be present.
+[INFO] - [30-03-2025 18:51:03] [TestNG-test-LoginTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be visible.
+[INFO] - [30-03-2025 18:51:04] [TestNG-test-LoginTests-1] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: standard_user in the field: By.id: user-name
+[DEBUG] - [30-03-2025 18:51:04] [TestNG-test-LoginTests-1] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validPassword']
+[INFO] - [30-03-2025 18:51:04] [TestNG-test-LoginTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be present.
+[INFO] - [30-03-2025 18:51:04] [TestNG-test-LoginTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be visible.
+[INFO] - [30-03-2025 18:51:05] [TestNG-test-LoginTests-1] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: secret_sauce in the field: By.id: password
+[INFO] - [30-03-2025 18:51:05] [TestNG-test-LoginTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be present.
+[INFO] - [30-03-2025 18:51:05] [TestNG-test-LoginTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be visible.
+[INFO] - [30-03-2025 18:51:05] [TestNG-test-LoginTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be clickable.
+[INFO] - [30-03-2025 18:51:06] [TestNG-test-LoginTests-1] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on By.id: login-button
+[INFO] - [30-03-2025 18:51:13] [TestNG-test-LoginTests-8] [com.saucedemo.swagLabs.basetest.BaseTest] - Opening chrome browser....
+[INFO] - [30-03-2025 18:51:18] [TestNG-test-LoginTests-5] [com.saucedemo.swagLabs.basetest.BaseTest] - Driver created on: chrome
+[INFO] - [30-03-2025 18:51:18] [TestNG-test-LoginTests-8] [com.saucedemo.swagLabs.listeners.TestNGListeners] - Test case: LG_08verifyLoginWithInvalidCredentialsAndPressEnterKey passed
+[DEBUG] - [30-03-2025 18:51:18] [TestNG-test-LoginTests-8] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['inValidUsername']
+[INFO] - [30-03-2025 18:51:19] [TestNG-test-LoginTests-8] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be present.
+[INFO] - [30-03-2025 18:51:19] [TestNG-test-LoginTests-8] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be visible.
+[INFO] - [30-03-2025 18:51:20] [TestNG-test-LoginTests-8] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: jack_reacher in the field: By.id: user-name
+[DEBUG] - [30-03-2025 18:51:20] [TestNG-test-LoginTests-8] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['invalidPassword']
+[INFO] - [30-03-2025 18:51:21] [TestNG-test-LoginTests-8] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be present.
+[INFO] - [30-03-2025 18:51:21] [TestNG-test-LoginTests-8] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be visible.
+[INFO] - [30-03-2025 18:51:22] [TestNG-test-LoginTests-8] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: white_sauce in the field: By.id: password
+[INFO] - [30-03-2025 18:51:22] [TestNG-test-LoginTests-8] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: h3[data-test='error'] to be present.
+[INFO] - [30-03-2025 18:51:22] [TestNG-test-LoginTests-8] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: h3[data-test='error'] to be visible.
+[DEBUG] - [30-03-2025 18:51:23] [TestNG-test-LoginTests-8] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['invalidUsernameOrPassword']
+[INFO] - [30-03-2025 18:51:27] [TestNG-test-LoginTests-5] [com.saucedemo.swagLabs.basetest.BaseTest] - Opening chrome browser....
+[INFO] - [30-03-2025 18:51:42] [TestNG-test-LoginTests-7] [com.saucedemo.swagLabs.basetest.BaseTest] - Driver created on: chrome
+[INFO] - [30-03-2025 18:51:42] [TestNG-test-LoginTests-5] [com.saucedemo.swagLabs.listeners.TestNGListeners] - Test case: LG_05verifyLoginWithBlankPasswordField passed
+[DEBUG] - [30-03-2025 18:51:42] [TestNG-test-LoginTests-5] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validUsername']
+[INFO] - [30-03-2025 18:51:43] [TestNG-test-LoginTests-5] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be present.
+[INFO] - [30-03-2025 18:51:43] [TestNG-test-LoginTests-5] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be visible.
+[INFO] - [30-03-2025 18:51:44] [TestNG-test-LoginTests-5] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: standard_user in the field: By.id: user-name
+[DEBUG] - [30-03-2025 18:51:44] [TestNG-test-LoginTests-5] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['emptyPassword']
+[INFO] - [30-03-2025 18:51:44] [TestNG-test-LoginTests-5] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be present.
+[INFO] - [30-03-2025 18:51:45] [TestNG-test-LoginTests-5] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be visible.
+[INFO] - [30-03-2025 18:51:45] [TestNG-test-LoginTests-5] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data:  in the field: By.id: password
+[INFO] - [30-03-2025 18:51:45] [TestNG-test-LoginTests-5] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be present.
+[INFO] - [30-03-2025 18:51:45] [TestNG-test-LoginTests-5] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be visible.
+[INFO] - [30-03-2025 18:51:45] [TestNG-test-LoginTests-5] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be clickable.
+[INFO] - [30-03-2025 18:51:45] [TestNG-test-LoginTests-5] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on By.id: login-button
+[INFO] - [30-03-2025 18:51:45] [TestNG-test-LoginTests-5] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: h3[data-test='error'] to be present.
+[INFO] - [30-03-2025 18:51:46] [TestNG-test-LoginTests-5] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: h3[data-test='error'] to be visible.
+[DEBUG] - [30-03-2025 18:51:46] [TestNG-test-LoginTests-5] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['passwordRequired']
+[INFO] - [30-03-2025 18:51:48] [TestNG-test-LoginTests-7] [com.saucedemo.swagLabs.basetest.BaseTest] - Opening chrome browser....
+[INFO] - [30-03-2025 18:51:55] [TestNG-test-LoginTests-4] [com.saucedemo.swagLabs.basetest.BaseTest] - Driver created on: chrome
+[INFO] - [30-03-2025 18:51:55] [TestNG-test-LoginTests-7] [com.saucedemo.swagLabs.listeners.TestNGListeners] - Test case: LG_07verifyLoginWithValidCredentialsAndPressEnterKey passed
+[DEBUG] - [30-03-2025 18:51:55] [TestNG-test-LoginTests-7] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validUsername']
+[INFO] - [30-03-2025 18:51:58] [TestNG-test-LoginTests-7] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be present.
+[INFO] - [30-03-2025 18:51:58] [TestNG-test-LoginTests-7] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be visible.
+[INFO] - [30-03-2025 18:52:06] [TestNG-test-LoginTests-7] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: standard_user in the field: By.id: user-name
+[DEBUG] - [30-03-2025 18:52:06] [TestNG-test-LoginTests-7] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validPassword']
+[INFO] - [30-03-2025 18:52:06] [TestNG-test-LoginTests-7] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be present.
+[INFO] - [30-03-2025 18:52:06] [TestNG-test-LoginTests-7] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be visible.
+[INFO] - [30-03-2025 18:52:11] [TestNG-test-LoginTests-7] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: secret_sauce in the field: By.id: password
+[INFO] - [30-03-2025 18:52:12] [TestNG-test-LoginTests-4] [com.saucedemo.swagLabs.basetest.BaseTest] - Opening chrome browser....
+[INFO] - [30-03-2025 18:52:17] [TestNG-test-LoginTests-3] [com.saucedemo.swagLabs.basetest.BaseTest] - Driver created on: chrome
+[INFO] - [30-03-2025 18:52:17] [TestNG-test-LoginTests-4] [com.saucedemo.swagLabs.listeners.TestNGListeners] - Test case: LG_04verifyLoginWithBlankUsernameField passed
+[DEBUG] - [30-03-2025 18:52:17] [TestNG-test-LoginTests-4] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['emptyUsername']
+[INFO] - [30-03-2025 18:52:20] [TestNG-test-LoginTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be present.
+[INFO] - [30-03-2025 18:52:20] [TestNG-test-LoginTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be visible.
+[INFO] - [30-03-2025 18:52:21] [TestNG-test-LoginTests-4] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data:  in the field: By.id: user-name
+[DEBUG] - [30-03-2025 18:52:21] [TestNG-test-LoginTests-4] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validPassword']
+[INFO] - [30-03-2025 18:52:22] [TestNG-test-LoginTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be present.
+[INFO] - [30-03-2025 18:52:22] [TestNG-test-LoginTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be visible.
+[INFO] - [30-03-2025 18:52:25] [TestNG-test-LoginTests-4] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: secret_sauce in the field: By.id: password
+[INFO] - [30-03-2025 18:52:25] [TestNG-test-LoginTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be present.
+[INFO] - [30-03-2025 18:52:25] [TestNG-test-LoginTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be visible.
+[INFO] - [30-03-2025 18:52:25] [TestNG-test-LoginTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be clickable.
+[INFO] - [30-03-2025 18:52:25] [TestNG-test-LoginTests-4] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on By.id: login-button
+[INFO] - [30-03-2025 18:52:25] [TestNG-test-LoginTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: h3[data-test='error'] to be present.
+[INFO] - [30-03-2025 18:52:26] [TestNG-test-LoginTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: h3[data-test='error'] to be visible.
+[DEBUG] - [30-03-2025 18:52:26] [TestNG-test-LoginTests-4] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['usernameRequired']
+[INFO] - [30-03-2025 18:52:36] [TestNG-test-LoginTests-3] [com.saucedemo.swagLabs.basetest.BaseTest] - Opening chrome browser....
+[INFO] - [30-03-2025 18:52:37] [TestNG-test-LoginTests-9] [com.saucedemo.swagLabs.basetest.BaseTest] - Driver created on: chrome
+[INFO] - [30-03-2025 18:52:37] [TestNG-test-LoginTests-3] [com.saucedemo.swagLabs.listeners.TestNGListeners] - Test case: LG_03LoginWithAnInvalidPassword passed
+[DEBUG] - [30-03-2025 18:52:37] [TestNG-test-LoginTests-3] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validUsername']
+[INFO] - [30-03-2025 18:52:38] [TestNG-test-LoginTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be present.
+[INFO] - [30-03-2025 18:52:38] [TestNG-test-LoginTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be visible.
+[INFO] - [30-03-2025 18:52:38] [TestNG-test-LoginTests-3] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: standard_user in the field: By.id: user-name
+[DEBUG] - [30-03-2025 18:52:38] [TestNG-test-LoginTests-3] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['invalidPassword']
+[INFO] - [30-03-2025 18:52:38] [TestNG-test-LoginTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be present.
+[INFO] - [30-03-2025 18:52:38] [TestNG-test-LoginTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be visible.
+[INFO] - [30-03-2025 18:52:39] [TestNG-test-LoginTests-3] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: white_sauce in the field: By.id: password
+[INFO] - [30-03-2025 18:52:39] [TestNG-test-LoginTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be present.
+[INFO] - [30-03-2025 18:52:40] [TestNG-test-LoginTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be visible.
+[INFO] - [30-03-2025 18:52:40] [TestNG-test-LoginTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be clickable.
+[INFO] - [30-03-2025 18:52:40] [TestNG-test-LoginTests-3] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on By.id: login-button
+[INFO] - [30-03-2025 18:52:40] [TestNG-test-LoginTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: h3[data-test='error'] to be present.
+[INFO] - [30-03-2025 18:52:41] [TestNG-test-LoginTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: h3[data-test='error'] to be visible.
+[DEBUG] - [30-03-2025 18:52:42] [TestNG-test-LoginTests-3] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['invalidUsernameOrPassword']
+[INFO] - [30-03-2025 18:52:49] [TestNG-test-LoginTests-9] [com.saucedemo.swagLabs.basetest.BaseTest] - Opening chrome browser....
+[INFO] - [30-03-2025 18:52:50] [TestNG-test-LoginTests-6] [com.saucedemo.swagLabs.basetest.BaseTest] - Driver created on: chrome
+[INFO] - [30-03-2025 18:52:50] [TestNG-test-LoginTests-9] [com.saucedemo.swagLabs.listeners.TestNGListeners] - Test case: LG_09verifyUserLogout passed
+[DEBUG] - [30-03-2025 18:52:50] [TestNG-test-LoginTests-9] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validUsername']
+[INFO] - [30-03-2025 18:52:54] [TestNG-test-LoginTests-9] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be present.
+[INFO] - [30-03-2025 18:52:54] [TestNG-test-LoginTests-9] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be visible.
+[INFO] - [30-03-2025 18:52:55] [TestNG-test-LoginTests-9] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: standard_user in the field: By.id: user-name
+[DEBUG] - [30-03-2025 18:52:55] [TestNG-test-LoginTests-9] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validPassword']
+[INFO] - [30-03-2025 18:52:56] [TestNG-test-LoginTests-9] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be present.
+[INFO] - [30-03-2025 18:52:56] [TestNG-test-LoginTests-9] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be visible.
+[INFO] - [30-03-2025 18:52:58] [TestNG-test-LoginTests-9] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: secret_sauce in the field: By.id: password
+[INFO] - [30-03-2025 18:52:58] [TestNG-test-LoginTests-9] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be present.
+[INFO] - [30-03-2025 18:52:58] [TestNG-test-LoginTests-9] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be visible.
+[INFO] - [30-03-2025 18:52:58] [TestNG-test-LoginTests-9] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be clickable.
+[INFO] - [30-03-2025 18:53:00] [TestNG-test-LoginTests-9] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on By.id: login-button
+[INFO] - [30-03-2025 18:53:00] [TestNG-test-LoginTests-9] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: react-burger-menu-btn to be present.
+[INFO] - [30-03-2025 18:53:01] [TestNG-test-LoginTests-9] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: react-burger-menu-btn to be visible.
+[INFO] - [30-03-2025 18:53:01] [TestNG-test-LoginTests-9] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: react-burger-menu-btn to be clickable.
+[INFO] - [30-03-2025 18:53:04] [TestNG-test-LoginTests-9] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on By.id: react-burger-menu-btn
+[INFO] - [30-03-2025 18:53:04] [TestNG-test-LoginTests-9] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: logout_sidebar_link to be present.
+[INFO] - [30-03-2025 18:53:04] [TestNG-test-LoginTests-9] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: logout_sidebar_link to be visible.
+[INFO] - [30-03-2025 18:53:04] [TestNG-test-LoginTests-9] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: logout_sidebar_link to be clickable.
+[INFO] - [30-03-2025 18:53:05] [TestNG-test-LoginTests-9] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on By.id: logout_sidebar_link
+[INFO] - [30-03-2025 18:53:20] [TestNG-test-LoginTests-6] [com.saucedemo.swagLabs.basetest.BaseTest] - Opening chrome browser....
+[INFO] - [30-03-2025 18:53:25] [TestNG-test-LoginTests-9] [com.saucedemo.swagLabs.basetest.BaseTest] - Closing the browser....
+[INFO] - [30-03-2025 18:53:25] [TestNG-test-LoginTests-6] [com.saucedemo.swagLabs.listeners.TestNGListeners] - Test case: LG_06verifyPasswordIsMasked passed
+[DEBUG] - [30-03-2025 18:53:25] [TestNG-test-LoginTests-6] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validPassword']
+[INFO] - [30-03-2025 18:53:26] [TestNG-test-LoginTests-6] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be present.
+[INFO] - [30-03-2025 18:53:26] [TestNG-test-LoginTests-6] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be visible.
+[INFO] - [30-03-2025 18:53:26] [TestNG-test-LoginTests-6] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: secret_sauce in the field: By.id: password
+[INFO] - [30-03-2025 18:53:26] [TestNG-test-LoginTests-6] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be present.
+[INFO] - [30-03-2025 18:53:26] [TestNG-test-LoginTests-6] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be visible.
+[INFO] - [30-03-2025 18:53:26] [TestNG-test-LoginTests-6] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be present.
+[INFO] - [30-03-2025 18:53:26] [TestNG-test-LoginTests-6] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be visible.
+[INFO] - [30-03-2025 18:53:30] [TestNG-test-LoginTests-3] [com.saucedemo.swagLabs.basetest.BaseTest] - Closing the browser....
+[INFO] - [30-03-2025 18:53:32] [TestNG-test-LoginTests-4] [com.saucedemo.swagLabs.basetest.BaseTest] - Closing the browser....
+[INFO] - [30-03-2025 18:53:34] [TestNG-test-LoginTests-7] [com.saucedemo.swagLabs.basetest.BaseTest] - Closing the browser....
+[INFO] - [30-03-2025 18:53:35] [TestNG-test-LoginTests-5] [com.saucedemo.swagLabs.basetest.BaseTest] - Closing the browser....
+[INFO] - [30-03-2025 18:53:37] [TestNG-test-LoginTests-8] [com.saucedemo.swagLabs.basetest.BaseTest] - Closing the browser....
+[INFO] - [30-03-2025 18:53:38] [TestNG-test-LoginTests-1] [com.saucedemo.swagLabs.basetest.BaseTest] - Closing the browser....
+[INFO] - [30-03-2025 18:53:39] [TestNG-test-LoginTests-2] [com.saucedemo.swagLabs.basetest.BaseTest] - Closing the browser....
+[INFO] - [30-03-2025 18:53:40] [TestNG-test-LoginTests-6] [com.saucedemo.swagLabs.basetest.BaseTest] - Closing the browser....
+[INFO] - [30-03-2025 18:53:43] [TestNG-test-LoginTests-6] [utils.AllureUtils] - Logs attached to Allure report
+[INFO] - [30-03-2025 18:53:43] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.basetest.BaseTest] - Driver created on: chrome
+[INFO] - [30-03-2025 18:53:51] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.basetest.BaseTest] - Opening chrome browser....
+[INFO] - [30-03-2025 18:53:54] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.basetest.BaseTest] - Driver created on: chrome
+[INFO] - [30-03-2025 18:53:54] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.listeners.TestNGListeners] - Test case: ATC_02_VerifyAddTwoItemsToCart passed
+[DEBUG] - [30-03-2025 18:53:54] [TestNG-test-AddToCartTests-2] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validUsername']
+[INFO] - [30-03-2025 18:53:54] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be present.
+[INFO] - [30-03-2025 18:53:55] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be visible.
+[INFO] - [30-03-2025 18:53:55] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: standard_user in the field: By.id: user-name
+[DEBUG] - [30-03-2025 18:53:55] [TestNG-test-AddToCartTests-2] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validPassword']
+[INFO] - [30-03-2025 18:53:55] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be present.
+[INFO] - [30-03-2025 18:53:55] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be visible.
+[INFO] - [30-03-2025 18:53:56] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: secret_sauce in the field: By.id: password
+[INFO] - [30-03-2025 18:53:56] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be present.
+[INFO] - [30-03-2025 18:53:56] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be visible.
+[INFO] - [30-03-2025 18:53:56] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be clickable.
+[INFO] - [30-03-2025 18:53:57] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on By.id: login-button
+[DEBUG] - [30-03-2025 18:53:57] [TestNG-test-AddToCartTests-2] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item2']['Name']
+[INFO] - [30-03-2025 18:53:57] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.pages.ProductsPage] - Adding Sauce Labs Bike Light to cart
+[INFO] - [30-03-2025 18:53:57] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be present.
+[INFO] - [30-03-2025 18:53:57] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be visible.
+[INFO] - [30-03-2025 18:53:57] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be clickable.
+[INFO] - [30-03-2025 18:53:58] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on [unknown locator]
+[DEBUG] - [30-03-2025 18:53:58] [TestNG-test-AddToCartTests-2] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item3']['Name']
+[INFO] - [30-03-2025 18:53:58] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.pages.ProductsPage] - Adding Sauce Labs Bolt T-Shirt to cart
+[INFO] - [30-03-2025 18:53:58] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be present.
+[INFO] - [30-03-2025 18:53:59] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be visible.
+[INFO] - [30-03-2025 18:53:59] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be clickable.
+[INFO] - [30-03-2025 18:53:59] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on [unknown locator]
+[DEBUG] - [30-03-2025 18:53:59] [TestNG-test-AddToCartTests-2] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item2']['Name']
+[INFO] - [30-03-2025 18:53:59] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be present.
+[INFO] - [30-03-2025 18:53:59] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be visible.
+[INFO] - [30-03-2025 18:53:59] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.pages.ProductsPage] - Sauce Labs Bike Light added to cart successfully
+[DEBUG] - [30-03-2025 18:53:59] [TestNG-test-AddToCartTests-2] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item3']['Name']
+[INFO] - [30-03-2025 18:53:59] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be present.
+[INFO] - [30-03-2025 18:53:59] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be visible.
+[INFO] - [30-03-2025 18:53:59] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.pages.ProductsPage] - Sauce Labs Bolt T-Shirt added to cart successfully
+[INFO] - [30-03-2025 18:54:00] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: .shopping_cart_badge to be present.
+[INFO] - [30-03-2025 18:54:00] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: .shopping_cart_badge to be visible.
+[INFO] - [30-03-2025 18:54:01] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.basetest.BaseTest] - Opening chrome browser....
+[INFO] - [30-03-2025 18:54:05] [TestNG-test-AddToCartTests-3] [com.saucedemo.swagLabs.basetest.BaseTest] - Driver created on: chrome
+[INFO] - [30-03-2025 18:54:05] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.listeners.TestNGListeners] - Test case: ATC_04_VerifyAddTwoItemsToCartAndRemoveOneItemFromCartFromProductsPage passed
+[DEBUG] - [30-03-2025 18:54:05] [TestNG-test-AddToCartTests-4] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validUsername']
+[INFO] - [30-03-2025 18:54:05] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be present.
+[INFO] - [30-03-2025 18:54:05] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be visible.
+[INFO] - [30-03-2025 18:54:06] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: standard_user in the field: By.id: user-name
+[DEBUG] - [30-03-2025 18:54:06] [TestNG-test-AddToCartTests-4] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validPassword']
+[INFO] - [30-03-2025 18:54:06] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be present.
+[INFO] - [30-03-2025 18:54:06] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be visible.
+[INFO] - [30-03-2025 18:54:07] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: secret_sauce in the field: By.id: password
+[INFO] - [30-03-2025 18:54:07] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be present.
+[INFO] - [30-03-2025 18:54:07] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be visible.
+[INFO] - [30-03-2025 18:54:07] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be clickable.
+[INFO] - [30-03-2025 18:54:07] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on By.id: login-button
+[DEBUG] - [30-03-2025 18:54:07] [TestNG-test-AddToCartTests-4] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item2']['Name']
+[INFO] - [30-03-2025 18:54:07] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.pages.ProductsPage] - Adding Sauce Labs Bike Light to cart
+[INFO] - [30-03-2025 18:54:07] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be present.
+[INFO] - [30-03-2025 18:54:07] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be visible.
+[INFO] - [30-03-2025 18:54:07] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be clickable.
+[INFO] - [30-03-2025 18:54:08] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on [unknown locator]
+[DEBUG] - [30-03-2025 18:54:08] [TestNG-test-AddToCartTests-4] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item3']['Name']
+[INFO] - [30-03-2025 18:54:08] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.pages.ProductsPage] - Adding Sauce Labs Bolt T-Shirt to cart
+[INFO] - [30-03-2025 18:54:08] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be present.
+[INFO] - [30-03-2025 18:54:08] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be visible.
+[INFO] - [30-03-2025 18:54:08] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be clickable.
+[INFO] - [30-03-2025 18:54:09] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on [unknown locator]
+[DEBUG] - [30-03-2025 18:54:09] [TestNG-test-AddToCartTests-4] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item2']['Name']
+[INFO] - [30-03-2025 18:54:09] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be present.
+[INFO] - [30-03-2025 18:54:09] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be visible.
+[INFO] - [30-03-2025 18:54:10] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.pages.ProductsPage] - Sauce Labs Bike Light added to cart successfully
+[DEBUG] - [30-03-2025 18:54:10] [TestNG-test-AddToCartTests-4] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item3']['Name']
+[INFO] - [30-03-2025 18:54:10] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be present.
+[INFO] - [30-03-2025 18:54:10] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be visible.
+[INFO] - [30-03-2025 18:54:10] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.pages.ProductsPage] - Sauce Labs Bolt T-Shirt added to cart successfully
+[INFO] - [30-03-2025 18:54:10] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: .shopping_cart_badge to be present.
+[INFO] - [30-03-2025 18:54:10] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: .shopping_cart_badge to be visible.
+[DEBUG] - [30-03-2025 18:54:11] [TestNG-test-AddToCartTests-4] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item2']['Name']
+[INFO] - [30-03-2025 18:54:11] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.pages.ProductsPage] - Removing Sauce Labs Bike Light from cart
+[INFO] - [30-03-2025 18:54:11] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be present.
+[INFO] - [30-03-2025 18:54:11] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be visible.
+[INFO] - [30-03-2025 18:54:11] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be clickable.
+[INFO] - [30-03-2025 18:54:11] [TestNG-test-AddToCartTests-3] [com.saucedemo.swagLabs.basetest.BaseTest] - Opening chrome browser....
+[INFO] - [30-03-2025 18:54:12] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on [unknown locator]
+[DEBUG] - [30-03-2025 18:54:12] [TestNG-test-AddToCartTests-4] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item2']['Name']
+[INFO] - [30-03-2025 18:54:12] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be present.
+[INFO] - [30-03-2025 18:54:12] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be visible.
+[INFO] - [30-03-2025 18:54:12] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.pages.ProductsPage] - Sauce Labs Bike Light removed from cart successfully
+[INFO] - [30-03-2025 18:54:12] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: .shopping_cart_badge to be present.
+[INFO] - [30-03-2025 18:54:12] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: .shopping_cart_badge to be visible.
+[INFO] - [30-03-2025 18:54:13] [TestNG-test-AddToCartTests-1] [com.saucedemo.swagLabs.basetest.BaseTest] - Driver created on: chrome
+[INFO] - [30-03-2025 18:54:13] [TestNG-test-AddToCartTests-3] [com.saucedemo.swagLabs.listeners.TestNGListeners] - Test case: ATC_03_VerifyRemoveItemFromCartFromProductsPage passed
+[DEBUG] - [30-03-2025 18:54:13] [TestNG-test-AddToCartTests-3] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validUsername']
+[INFO] - [30-03-2025 18:54:16] [TestNG-test-AddToCartTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be present.
+[INFO] - [30-03-2025 18:54:16] [TestNG-test-AddToCartTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be visible.
+[INFO] - [30-03-2025 18:54:18] [TestNG-test-AddToCartTests-3] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: standard_user in the field: By.id: user-name
+[DEBUG] - [30-03-2025 18:54:18] [TestNG-test-AddToCartTests-3] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validPassword']
+[INFO] - [30-03-2025 18:54:18] [TestNG-test-AddToCartTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be present.
+[INFO] - [30-03-2025 18:54:18] [TestNG-test-AddToCartTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be visible.
+[INFO] - [30-03-2025 18:54:23] [TestNG-test-AddToCartTests-3] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: secret_sauce in the field: By.id: password
+[INFO] - [30-03-2025 18:54:23] [TestNG-test-AddToCartTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be present.
+[INFO] - [30-03-2025 18:54:23] [TestNG-test-AddToCartTests-1] [com.saucedemo.swagLabs.basetest.BaseTest] - Opening chrome browser....
+[INFO] - [30-03-2025 18:54:23] [TestNG-test-AddToCartTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be visible.
+[INFO] - [30-03-2025 18:54:23] [TestNG-test-AddToCartTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be clickable.
+[INFO] - [30-03-2025 18:54:26] [TestNG-test-AddToCartTests-3] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on By.id: login-button
+[DEBUG] - [30-03-2025 18:54:26] [TestNG-test-AddToCartTests-3] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item2']['Name']
+[INFO] - [30-03-2025 18:54:26] [TestNG-test-AddToCartTests-3] [com.saucedemo.swagLabs.pages.ProductsPage] - Adding Sauce Labs Bike Light to cart
+[INFO] - [30-03-2025 18:54:26] [TestNG-test-AddToCartTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be present.
+[INFO] - [30-03-2025 18:54:26] [TestNG-test-AddToCartTests-4] [com.saucedemo.swagLabs.basetest.BaseTest] - Closing the browser....
+[INFO] - [30-03-2025 18:54:26] [TestNG-test-AddToCartTests-1] [com.saucedemo.swagLabs.listeners.TestNGListeners] - Test case: ATC_01_VerifyAddItemToCart passed
+[DEBUG] - [30-03-2025 18:54:26] [TestNG-test-AddToCartTests-1] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validUsername']
+[INFO] - [30-03-2025 18:54:26] [TestNG-test-AddToCartTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be visible.
+[INFO] - [30-03-2025 18:54:27] [TestNG-test-AddToCartTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be clickable.
+[INFO] - [30-03-2025 18:54:27] [TestNG-test-AddToCartTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be present.
+[INFO] - [30-03-2025 18:54:27] [TestNG-test-AddToCartTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be visible.
+[INFO] - [30-03-2025 18:54:27] [TestNG-test-AddToCartTests-3] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on [unknown locator]
+[DEBUG] - [30-03-2025 18:54:27] [TestNG-test-AddToCartTests-3] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item2']['Name']
+[INFO] - [30-03-2025 18:54:27] [TestNG-test-AddToCartTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be present.
+[INFO] - [30-03-2025 18:54:27] [TestNG-test-AddToCartTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be visible.
+[INFO] - [30-03-2025 18:54:28] [TestNG-test-AddToCartTests-1] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: standard_user in the field: By.id: user-name
+[DEBUG] - [30-03-2025 18:54:28] [TestNG-test-AddToCartTests-1] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validPassword']
+[INFO] - [30-03-2025 18:54:28] [TestNG-test-AddToCartTests-3] [com.saucedemo.swagLabs.pages.ProductsPage] - Sauce Labs Bike Light added to cart successfully
+[INFO] - [30-03-2025 18:54:28] [TestNG-test-AddToCartTests-3] [com.saucedemo.swagLabs.listeners.TestNGListeners] - Test case: ATC_03_VerifyRemoveItemFromCartFromProductsPage failed
+[INFO] - [30-03-2025 18:54:28] [TestNG-test-AddToCartTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be present.
+[INFO] - [30-03-2025 18:54:28] [TestNG-test-AddToCartTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be visible.
+[INFO] - [30-03-2025 18:54:29] [TestNG-test-AddToCartTests-2] [com.saucedemo.swagLabs.basetest.BaseTest] - Closing the browser....
+[INFO] - [30-03-2025 18:54:30] [TestNG-test-AddToCartTests-1] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: secret_sauce in the field: By.id: password
+[INFO] - [30-03-2025 18:54:30] [TestNG-test-AddToCartTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be present.
+[INFO] - [30-03-2025 18:54:30] [TestNG-test-AddToCartTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be visible.
+[INFO] - [30-03-2025 18:54:30] [TestNG-test-AddToCartTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be clickable.
+[INFO] - [30-03-2025 18:54:31] [TestNG-test-AddToCartTests-1] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on By.id: login-button
+[DEBUG] - [30-03-2025 18:54:31] [TestNG-test-AddToCartTests-1] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item2']['Name']
+[INFO] - [30-03-2025 18:54:31] [TestNG-test-AddToCartTests-1] [com.saucedemo.swagLabs.pages.ProductsPage] - Adding Sauce Labs Bike Light to cart
+[INFO] - [30-03-2025 18:54:31] [TestNG-test-AddToCartTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be present.
+[INFO] - [30-03-2025 18:54:32] [TestNG-test-AddToCartTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be visible.
+[INFO] - [30-03-2025 18:54:32] [TestNG-test-AddToCartTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be clickable.
+[INFO] - [30-03-2025 18:54:33] [TestNG-test-AddToCartTests-3] [com.saucedemo.swagLabs.basetest.BaseTest] - Closing the browser....
+[INFO] - [30-03-2025 18:54:33] [TestNG-test-AddToCartTests-1] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on [unknown locator]
+[DEBUG] - [30-03-2025 18:54:33] [TestNG-test-AddToCartTests-1] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item2']['Name']
+[INFO] - [30-03-2025 18:54:33] [TestNG-test-AddToCartTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be present.
+[INFO] - [30-03-2025 18:54:34] [TestNG-test-AddToCartTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be visible.
+[INFO] - [30-03-2025 18:54:34] [TestNG-test-AddToCartTests-1] [com.saucedemo.swagLabs.pages.ProductsPage] - Sauce Labs Bike Light added to cart successfully
+[INFO] - [30-03-2025 18:54:34] [TestNG-test-AddToCartTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: .shopping_cart_badge to be present.
+[INFO] - [30-03-2025 18:54:34] [TestNG-test-AddToCartTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: .shopping_cart_badge to be visible.
+[INFO] - [30-03-2025 18:54:36] [TestNG-test-AddToCartTests-1] [com.saucedemo.swagLabs.basetest.BaseTest] - Closing the browser....
+[INFO] - [30-03-2025 18:54:37] [TestNG-test-AddToCartTests-1] [utils.AllureUtils] - Logs attached to Allure report
+[INFO] - [30-03-2025 18:54:37] [TestNG-test-ShoppingCartTests-1] [com.saucedemo.swagLabs.basetest.BaseTest] - Driver created on: chrome
+[INFO] - [30-03-2025 18:54:43] [TestNG-test-ShoppingCartTests-1] [com.saucedemo.swagLabs.basetest.BaseTest] - Opening chrome browser....
+[INFO] - [30-03-2025 18:54:45] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.basetest.BaseTest] - Driver created on: chrome
+[INFO] - [30-03-2025 18:54:45] [TestNG-test-ShoppingCartTests-1] [com.saucedemo.swagLabs.listeners.TestNGListeners] - Test case: SC_01_VerifyItemAddedToCart passed
+[DEBUG] - [30-03-2025 18:54:45] [TestNG-test-ShoppingCartTests-1] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validUsername']
+[INFO] - [30-03-2025 18:54:45] [TestNG-test-ShoppingCartTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be present.
+[INFO] - [30-03-2025 18:54:45] [TestNG-test-ShoppingCartTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be visible.
+[INFO] - [30-03-2025 18:54:46] [TestNG-test-ShoppingCartTests-1] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: standard_user in the field: By.id: user-name
+[DEBUG] - [30-03-2025 18:54:46] [TestNG-test-ShoppingCartTests-1] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validPassword']
+[INFO] - [30-03-2025 18:54:46] [TestNG-test-ShoppingCartTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be present.
+[INFO] - [30-03-2025 18:54:46] [TestNG-test-ShoppingCartTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be visible.
+[INFO] - [30-03-2025 18:54:47] [TestNG-test-ShoppingCartTests-1] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: secret_sauce in the field: By.id: password
+[INFO] - [30-03-2025 18:54:47] [TestNG-test-ShoppingCartTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be present.
+[INFO] - [30-03-2025 18:54:47] [TestNG-test-ShoppingCartTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be visible.
+[INFO] - [30-03-2025 18:54:47] [TestNG-test-ShoppingCartTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be clickable.
+[INFO] - [30-03-2025 18:54:47] [TestNG-test-ShoppingCartTests-1] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on By.id: login-button
+[DEBUG] - [30-03-2025 18:54:47] [TestNG-test-ShoppingCartTests-1] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item2']['Name']
+[INFO] - [30-03-2025 18:54:47] [TestNG-test-ShoppingCartTests-1] [com.saucedemo.swagLabs.pages.ProductsPage] - Adding Sauce Labs Bike Light to cart
+[INFO] - [30-03-2025 18:54:47] [TestNG-test-ShoppingCartTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be present.
+[INFO] - [30-03-2025 18:54:47] [TestNG-test-ShoppingCartTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be visible.
+[INFO] - [30-03-2025 18:54:47] [TestNG-test-ShoppingCartTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be clickable.
+[INFO] - [30-03-2025 18:54:47] [TestNG-test-ShoppingCartTests-1] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on [unknown locator]
+[INFO] - [30-03-2025 18:54:47] [TestNG-test-ShoppingCartTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: .shopping_cart_link to be present.
+[INFO] - [30-03-2025 18:54:47] [TestNG-test-ShoppingCartTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: .shopping_cart_link to be visible.
+[INFO] - [30-03-2025 18:54:48] [TestNG-test-ShoppingCartTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: .shopping_cart_link to be clickable.
+[INFO] - [30-03-2025 18:54:48] [TestNG-test-ShoppingCartTests-1] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on By.cssSelector: .shopping_cart_link
+[INFO] - [30-03-2025 18:54:49] [TestNG-test-ShoppingCartTests-1] [com.saucedemo.swagLabs.utils.BrowserActions] - Current URL: https://www.saucedemo.com/cart.html
+[INFO] - [30-03-2025 18:54:49] [TestNG-test-ShoppingCartTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: .shopping_cart_badge to be present.
+[INFO] - [30-03-2025 18:54:49] [TestNG-test-ShoppingCartTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: .shopping_cart_badge to be visible.
+[DEBUG] - [30-03-2025 18:54:49] [TestNG-test-ShoppingCartTests-1] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item2']['Name']
+[INFO] - [30-03-2025 18:54:49] [TestNG-test-ShoppingCartTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.xpath: //div[.='Sauce Labs Bike Light']/ancestor::div[@class='cart_item'] to be present.
+[INFO] - [30-03-2025 18:54:49] [TestNG-test-ShoppingCartTests-1] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.xpath: //div[.='Sauce Labs Bike Light']/ancestor::div[@class='cart_item'] to be visible.
+[DEBUG] - [30-03-2025 18:54:50] [TestNG-test-ShoppingCartTests-1] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item2']['Name']
+[INFO] - [30-03-2025 18:54:53] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.basetest.BaseTest] - Opening chrome browser....
+[INFO] - [30-03-2025 18:54:57] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.basetest.BaseTest] - Driver created on: chrome
+[INFO] - [30-03-2025 18:54:57] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.listeners.TestNGListeners] - Test case: SC_02_VerifyTwoItemsAddedToCart passed
+[DEBUG] - [30-03-2025 18:54:57] [TestNG-test-ShoppingCartTests-2] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validUsername']
+[INFO] - [30-03-2025 18:54:57] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be present.
+[INFO] - [30-03-2025 18:54:57] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be visible.
+[INFO] - [30-03-2025 18:54:57] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: standard_user in the field: By.id: user-name
+[DEBUG] - [30-03-2025 18:54:57] [TestNG-test-ShoppingCartTests-2] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validPassword']
+[INFO] - [30-03-2025 18:54:58] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be present.
+[INFO] - [30-03-2025 18:54:58] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be visible.
+[INFO] - [30-03-2025 18:54:58] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: secret_sauce in the field: By.id: password
+[INFO] - [30-03-2025 18:54:58] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be present.
+[INFO] - [30-03-2025 18:54:58] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be visible.
+[INFO] - [30-03-2025 18:54:58] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be clickable.
+[INFO] - [30-03-2025 18:54:59] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on By.id: login-button
+[DEBUG] - [30-03-2025 18:54:59] [TestNG-test-ShoppingCartTests-2] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item2']['Name']
+[INFO] - [30-03-2025 18:54:59] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.pages.ProductsPage] - Adding Sauce Labs Bike Light to cart
+[INFO] - [30-03-2025 18:54:59] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be present.
+[INFO] - [30-03-2025 18:55:00] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be visible.
+[INFO] - [30-03-2025 18:55:00] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be clickable.
+[INFO] - [30-03-2025 18:55:01] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on [unknown locator]
+[DEBUG] - [30-03-2025 18:55:01] [TestNG-test-ShoppingCartTests-2] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item3']['Name']
+[INFO] - [30-03-2025 18:55:01] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.pages.ProductsPage] - Adding Sauce Labs Bolt T-Shirt to cart
+[INFO] - [30-03-2025 18:55:01] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be present.
+[INFO] - [30-03-2025 18:55:01] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be visible.
+[INFO] - [30-03-2025 18:55:01] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be clickable.
+[INFO] - [30-03-2025 18:55:01] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on [unknown locator]
+[INFO] - [30-03-2025 18:55:01] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: .shopping_cart_link to be present.
+[INFO] - [30-03-2025 18:55:01] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: .shopping_cart_link to be visible.
+[INFO] - [30-03-2025 18:55:01] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: .shopping_cart_link to be clickable.
+[INFO] - [30-03-2025 18:55:01] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on By.cssSelector: .shopping_cart_link
+[INFO] - [30-03-2025 18:55:01] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.utils.BrowserActions] - Current URL: https://www.saucedemo.com/cart.html
+[INFO] - [30-03-2025 18:55:02] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: .shopping_cart_badge to be present.
+[INFO] - [30-03-2025 18:55:02] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.basetest.BaseTest] - Opening chrome browser....
+[INFO] - [30-03-2025 18:55:02] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: .shopping_cart_badge to be visible.
+[DEBUG] - [30-03-2025 18:55:02] [TestNG-test-ShoppingCartTests-2] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item2']['Name']
+[INFO] - [30-03-2025 18:55:02] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.xpath: //div[.='Sauce Labs Bike Light']/ancestor::div[@class='cart_item'] to be present.
+[INFO] - [30-03-2025 18:55:02] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.xpath: //div[.='Sauce Labs Bike Light']/ancestor::div[@class='cart_item'] to be visible.
+[DEBUG] - [30-03-2025 18:55:02] [TestNG-test-ShoppingCartTests-2] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item3']['Name']
+[INFO] - [30-03-2025 18:55:02] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.xpath: //div[.='Sauce Labs Bolt T-Shirt']/ancestor::div[@class='cart_item'] to be present.
+[INFO] - [30-03-2025 18:55:02] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.xpath: //div[.='Sauce Labs Bolt T-Shirt']/ancestor::div[@class='cart_item'] to be visible.
+[DEBUG] - [30-03-2025 18:55:02] [TestNG-test-ShoppingCartTests-2] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item2']['Name']
+[DEBUG] - [30-03-2025 18:55:02] [TestNG-test-ShoppingCartTests-2] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item3']['Name']
+[INFO] - [30-03-2025 18:55:10] [TestNG-test-ShoppingCartTests-5] [com.saucedemo.swagLabs.basetest.BaseTest] - Driver created on: chrome
+[INFO] - [30-03-2025 18:55:10] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.listeners.TestNGListeners] - Test case: SC_04_VerifyAddTwoItemsToCartAndRemoveOneItemFromCart passed
+[DEBUG] - [30-03-2025 18:55:10] [TestNG-test-ShoppingCartTests-4] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validUsername']
+[INFO] - [30-03-2025 18:55:11] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be present.
+[INFO] - [30-03-2025 18:55:11] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be visible.
+[INFO] - [30-03-2025 18:55:11] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: standard_user in the field: By.id: user-name
+[DEBUG] - [30-03-2025 18:55:11] [TestNG-test-ShoppingCartTests-4] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validPassword']
+[INFO] - [30-03-2025 18:55:11] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be present.
+[INFO] - [30-03-2025 18:55:11] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be visible.
+[INFO] - [30-03-2025 18:55:12] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: secret_sauce in the field: By.id: password
+[INFO] - [30-03-2025 18:55:12] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be present.
+[INFO] - [30-03-2025 18:55:12] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be visible.
+[INFO] - [30-03-2025 18:55:12] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be clickable.
+[INFO] - [30-03-2025 18:55:13] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on By.id: login-button
+[DEBUG] - [30-03-2025 18:55:13] [TestNG-test-ShoppingCartTests-4] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item2']['Name']
+[INFO] - [30-03-2025 18:55:13] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.pages.ProductsPage] - Adding Sauce Labs Bike Light to cart
+[INFO] - [30-03-2025 18:55:13] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be present.
+[INFO] - [30-03-2025 18:55:13] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be visible.
+[INFO] - [30-03-2025 18:55:13] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be clickable.
+[INFO] - [30-03-2025 18:55:15] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on [unknown locator]
+[DEBUG] - [30-03-2025 18:55:15] [TestNG-test-ShoppingCartTests-4] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item3']['Name']
+[INFO] - [30-03-2025 18:55:15] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.pages.ProductsPage] - Adding Sauce Labs Bolt T-Shirt to cart
+[INFO] - [30-03-2025 18:55:15] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be present.
+[INFO] - [30-03-2025 18:55:16] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be visible.
+[INFO] - [30-03-2025 18:55:16] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be clickable.
+[INFO] - [30-03-2025 18:55:16] [TestNG-test-ShoppingCartTests-5] [com.saucedemo.swagLabs.basetest.BaseTest] - Opening chrome browser....
+[INFO] - [30-03-2025 18:55:17] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on [unknown locator]
+[INFO] - [30-03-2025 18:55:17] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: .shopping_cart_link to be present.
+[INFO] - [30-03-2025 18:55:18] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: .shopping_cart_link to be visible.
+[INFO] - [30-03-2025 18:55:18] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: .shopping_cart_link to be clickable.
+[INFO] - [30-03-2025 18:55:19] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on By.cssSelector: .shopping_cart_link
+[INFO] - [30-03-2025 18:55:19] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.utils.BrowserActions] - Current URL: https://www.saucedemo.com/cart.html
+[INFO] - [30-03-2025 18:55:19] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: .shopping_cart_badge to be present.
+[INFO] - [30-03-2025 18:55:19] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: .shopping_cart_badge to be visible.
+[DEBUG] - [30-03-2025 18:55:19] [TestNG-test-ShoppingCartTests-4] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item2']['Name']
+[INFO] - [30-03-2025 18:55:20] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.pages.CartPage] - Removing Sauce Labs Bike Light from cart
+[INFO] - [30-03-2025 18:55:20] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be present.
+[INFO] - [30-03-2025 18:55:20] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be visible.
+[INFO] - [30-03-2025 18:55:20] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be clickable.
+[INFO] - [30-03-2025 18:55:20] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on [unknown locator]
+[DEBUG] - [30-03-2025 18:55:20] [TestNG-test-ShoppingCartTests-4] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item2']['Name']
+[DEBUG] - [30-03-2025 18:55:20] [TestNG-test-ShoppingCartTests-4] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item3']['Name']
+[INFO] - [30-03-2025 18:55:20] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.xpath: //div[.='Sauce Labs Bolt T-Shirt']/ancestor::div[@class='cart_item'] to be present.
+[INFO] - [30-03-2025 18:55:20] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.xpath: //div[.='Sauce Labs Bolt T-Shirt']/ancestor::div[@class='cart_item'] to be visible.
+[DEBUG] - [30-03-2025 18:55:20] [TestNG-test-ShoppingCartTests-4] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item3']['Name']
+[INFO] - [30-03-2025 18:55:22] [TestNG-test-ShoppingCartTests-3] [com.saucedemo.swagLabs.basetest.BaseTest] - Driver created on: chrome
+[INFO] - [30-03-2025 18:55:22] [TestNG-test-ShoppingCartTests-5] [com.saucedemo.swagLabs.listeners.TestNGListeners] - Test case: SC_05VerifyEmptyCart passed
+[DEBUG] - [30-03-2025 18:55:22] [TestNG-test-ShoppingCartTests-5] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validUsername']
+[INFO] - [30-03-2025 18:55:22] [TestNG-test-ShoppingCartTests-5] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be present.
+[INFO] - [30-03-2025 18:55:23] [TestNG-test-ShoppingCartTests-5] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be visible.
+[INFO] - [30-03-2025 18:55:23] [TestNG-test-ShoppingCartTests-5] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: standard_user in the field: By.id: user-name
+[DEBUG] - [30-03-2025 18:55:23] [TestNG-test-ShoppingCartTests-5] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validPassword']
+[INFO] - [30-03-2025 18:55:23] [TestNG-test-ShoppingCartTests-5] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be present.
+[INFO] - [30-03-2025 18:55:23] [TestNG-test-ShoppingCartTests-5] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be visible.
+[INFO] - [30-03-2025 18:55:24] [TestNG-test-ShoppingCartTests-5] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: secret_sauce in the field: By.id: password
+[INFO] - [30-03-2025 18:55:24] [TestNG-test-ShoppingCartTests-5] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be present.
+[INFO] - [30-03-2025 18:55:24] [TestNG-test-ShoppingCartTests-5] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be visible.
+[INFO] - [30-03-2025 18:55:24] [TestNG-test-ShoppingCartTests-5] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be clickable.
+[INFO] - [30-03-2025 18:55:25] [TestNG-test-ShoppingCartTests-5] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on By.id: login-button
+[INFO] - [30-03-2025 18:55:25] [TestNG-test-ShoppingCartTests-5] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: .shopping_cart_link to be present.
+[INFO] - [30-03-2025 18:55:26] [TestNG-test-ShoppingCartTests-5] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: .shopping_cart_link to be visible.
+[INFO] - [30-03-2025 18:55:26] [TestNG-test-ShoppingCartTests-5] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: .shopping_cart_link to be clickable.
+[INFO] - [30-03-2025 18:55:26] [TestNG-test-ShoppingCartTests-5] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on By.cssSelector: .shopping_cart_link
+[INFO] - [30-03-2025 18:55:26] [TestNG-test-ShoppingCartTests-5] [com.saucedemo.swagLabs.utils.BrowserActions] - Current URL: https://www.saucedemo.com/cart.html
+[INFO] - [30-03-2025 18:55:32] [TestNG-test-ShoppingCartTests-3] [com.saucedemo.swagLabs.basetest.BaseTest] - Opening chrome browser....
+[WARN] - [30-03-2025 18:55:37] [TestNG-test-ShoppingCartTests-5] [com.saucedemo.swagLabs.elementActions.ElementActions] - Expected condition failed: waiting for visibility of element located by By.cssSelector: .shopping_cart_badge (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: jdk.proxy2.$Proxy33
+[INFO] - [30-03-2025 18:55:44] [TestNG-test-ShoppingCartTests-5] [com.saucedemo.swagLabs.basetest.BaseTest] - Closing the browser....
+[INFO] - [30-03-2025 18:55:44] [TestNG-test-ShoppingCartTests-3] [com.saucedemo.swagLabs.listeners.TestNGListeners] - Test case: SC_03_VerifyRemoveItemFromCart passed
+[DEBUG] - [30-03-2025 18:55:44] [TestNG-test-ShoppingCartTests-3] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validUsername']
+[INFO] - [30-03-2025 18:55:45] [TestNG-test-ShoppingCartTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be present.
+[INFO] - [30-03-2025 18:55:45] [TestNG-test-ShoppingCartTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: user-name to be visible.
+[INFO] - [30-03-2025 18:55:46] [TestNG-test-ShoppingCartTests-3] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: standard_user in the field: By.id: user-name
+[DEBUG] - [30-03-2025 18:55:46] [TestNG-test-ShoppingCartTests-3] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['validPassword']
+[INFO] - [30-03-2025 18:55:46] [TestNG-test-ShoppingCartTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be present.
+[INFO] - [30-03-2025 18:55:46] [TestNG-test-ShoppingCartTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: password to be visible.
+[INFO] - [30-03-2025 18:55:47] [TestNG-test-ShoppingCartTests-3] [com.saucedemo.swagLabs.elementActions.ElementActions] - Type data: secret_sauce in the field: By.id: password
+[INFO] - [30-03-2025 18:55:47] [TestNG-test-ShoppingCartTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be present.
+[INFO] - [30-03-2025 18:55:47] [TestNG-test-ShoppingCartTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be visible.
+[INFO] - [30-03-2025 18:55:47] [TestNG-test-ShoppingCartTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.id: login-button to be clickable.
+[INFO] - [30-03-2025 18:55:49] [TestNG-test-ShoppingCartTests-3] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on By.id: login-button
+[DEBUG] - [30-03-2025 18:55:49] [TestNG-test-ShoppingCartTests-3] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item2']['Name']
+[INFO] - [30-03-2025 18:55:49] [TestNG-test-ShoppingCartTests-3] [com.saucedemo.swagLabs.pages.ProductsPage] - Adding Sauce Labs Bike Light to cart
+[INFO] - [30-03-2025 18:55:49] [TestNG-test-ShoppingCartTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be present.
+[INFO] - [30-03-2025 18:55:50] [TestNG-test-ShoppingCartTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be visible.
+[INFO] - [30-03-2025 18:55:50] [TestNG-test-ShoppingCartTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be clickable.
+[INFO] - [30-03-2025 18:55:50] [TestNG-test-ShoppingCartTests-4] [com.saucedemo.swagLabs.basetest.BaseTest] - Closing the browser....
+[INFO] - [30-03-2025 18:55:50] [TestNG-test-ShoppingCartTests-3] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on [unknown locator]
+[INFO] - [30-03-2025 18:55:50] [TestNG-test-ShoppingCartTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: .shopping_cart_link to be present.
+[INFO] - [30-03-2025 18:55:51] [TestNG-test-ShoppingCartTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: .shopping_cart_link to be visible.
+[INFO] - [30-03-2025 18:55:51] [TestNG-test-ShoppingCartTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: .shopping_cart_link to be clickable.
+[INFO] - [30-03-2025 18:55:51] [TestNG-test-ShoppingCartTests-3] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on By.cssSelector: .shopping_cart_link
+[INFO] - [30-03-2025 18:55:51] [TestNG-test-ShoppingCartTests-3] [com.saucedemo.swagLabs.utils.BrowserActions] - Current URL: https://www.saucedemo.com/cart.html
+[INFO] - [30-03-2025 18:55:52] [TestNG-test-ShoppingCartTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: .shopping_cart_badge to be present.
+[INFO] - [30-03-2025 18:55:52] [TestNG-test-ShoppingCartTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: By.cssSelector: .shopping_cart_badge to be visible.
+[INFO] - [30-03-2025 18:55:52] [TestNG-test-ShoppingCartTests-2] [com.saucedemo.swagLabs.basetest.BaseTest] - Closing the browser....
+[DEBUG] - [30-03-2025 18:55:52] [TestNG-test-ShoppingCartTests-3] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item2']['Name']
+[INFO] - [30-03-2025 18:55:52] [TestNG-test-ShoppingCartTests-3] [com.saucedemo.swagLabs.pages.CartPage] - Removing Sauce Labs Bike Light from cart
+[INFO] - [30-03-2025 18:55:52] [TestNG-test-ShoppingCartTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be present.
+[INFO] - [30-03-2025 18:55:53] [TestNG-test-ShoppingCartTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be visible.
+[INFO] - [30-03-2025 18:55:53] [TestNG-test-ShoppingCartTests-3] [com.saucedemo.swagLabs.utils.Waits] - Waiting for element: [unknown locator] to be clickable.
+[INFO] - [30-03-2025 18:55:53] [TestNG-test-ShoppingCartTests-3] [com.saucedemo.swagLabs.elementActions.ElementActions] - Click on [unknown locator]
+[DEBUG] - [30-03-2025 18:55:53] [TestNG-test-ShoppingCartTests-3] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['Item2']['Name']
+[INFO] - [30-03-2025 18:55:53] [TestNG-test-ShoppingCartTests-1] [com.saucedemo.swagLabs.basetest.BaseTest] - Closing the browser....
+[INFO] - [30-03-2025 18:55:55] [TestNG-test-ShoppingCartTests-3] [com.saucedemo.swagLabs.basetest.BaseTest] - Closing the browser....
