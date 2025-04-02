@@ -5,6 +5,7 @@ import com.saucedemo.swagLabs.listeners.TestNGListeners;
 import com.saucedemo.swagLabs.pages.CartPage;
 import com.saucedemo.swagLabs.pages.ProductsPage;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import utils.JsonUtils;
@@ -20,7 +21,6 @@ public class ShoppingCartTests extends BaseTest {
     @Test(priority = 1)
     public void SC_01_VerifyItemAddedToCart() {
 
-        validLogin();
         productsPage.addSpecificProductToCart(PRODUCTS_DATA.getJsonData("Item2.Name"));
         cartPage = productsPage.clickCartIcon();
 
@@ -38,7 +38,6 @@ public class ShoppingCartTests extends BaseTest {
     @Test(priority = 2)
     public void SC_02_VerifyTwoItemsAddedToCart() {
 
-        validLogin();
         productsPage.addSpecificProductToCart(PRODUCTS_DATA.getJsonData("Item2.Name"));
         productsPage.addSpecificProductToCart(PRODUCTS_DATA.getJsonData("Item3.Name"));
         cartPage = productsPage.clickCartIcon();
@@ -59,7 +58,6 @@ public class ShoppingCartTests extends BaseTest {
     @Test(priority = 3)
     public void SC_03_VerifyRemoveItemFromCart() {
 
-        validLogin();
         productsPage.addSpecificProductToCart(PRODUCTS_DATA.getJsonData("Item2.Name"));
         cartPage = productsPage.clickCartIcon();
 
@@ -80,7 +78,6 @@ public class ShoppingCartTests extends BaseTest {
     @Test(priority = 4)
     public void SC_04_VerifyAddTwoItemsToCartAndRemoveOneItemFromCart() {
 
-        validLogin();
         productsPage.addSpecificProductToCart(PRODUCTS_DATA.getJsonData("Item2.Name"));
         productsPage.addSpecificProductToCart(PRODUCTS_DATA.getJsonData("Item3.Name"));
         cartPage = productsPage.clickCartIcon();
@@ -105,7 +102,7 @@ public class ShoppingCartTests extends BaseTest {
 
     @Test(priority = 5)
     public void SC_05VerifyEmptyCart() {
-        validLogin();
+
         cartPage = productsPage.clickCartIcon();
 
         boolean check1 = cartPage.checkCartPageUrl();
@@ -118,7 +115,8 @@ public class ShoppingCartTests extends BaseTest {
 
     }
 
-    private void validLogin() {
+    @BeforeMethod
+    public synchronized void validLogin() {
         loginPage.typeUsername(LOGIN_DATA.getJsonData("validUsername"));
         loginPage.typePassword(LOGIN_DATA.getJsonData("validPassword"));
         productsPage = loginPage.clickLoginValid();
