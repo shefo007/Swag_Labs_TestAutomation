@@ -4,6 +4,7 @@ import com.saucedemo.swagLabs.basetest.BaseTest;
 import com.saucedemo.swagLabs.listeners.TestNGListeners;
 import com.saucedemo.swagLabs.pages.ProductsPage;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import utils.JsonUtils;
@@ -18,7 +19,6 @@ public class AddToCartTests extends BaseTest {
     @Test(priority = 1)
     public void ATC_01_VerifyAddItemToCart() {
 
-        validLogin();
         productsPage.addSpecificProductToCart(PRODUCTS_DATA.getJsonData("Item2.Name"));
 
         boolean check1 = productsPage.isProductAddedToCart(PRODUCTS_DATA.getJsonData("Item2.Name"));
@@ -33,7 +33,6 @@ public class AddToCartTests extends BaseTest {
     @Test(priority = 2)
     public void ATC_02_VerifyAddTwoItemsToCart() {
 
-        validLogin();
         productsPage.addSpecificProductToCart(PRODUCTS_DATA.getJsonData("Item2.Name"));
         productsPage.addSpecificProductToCart(PRODUCTS_DATA.getJsonData("Item3.Name"));
 
@@ -51,7 +50,6 @@ public class AddToCartTests extends BaseTest {
     @Test(priority = 3)
     public void ATC_03_VerifyRemoveItemFromCartFromProductsPage() {
 
-        validLogin();
         productsPage.addSpecificProductToCart(PRODUCTS_DATA.getJsonData("Item2.Name"));
         boolean check1 = productsPage.isProductAddedToCart(PRODUCTS_DATA.getJsonData("Item2.Name"));
         boolean check2 = productsPage.isNotificationVisibleOnCart();
@@ -73,7 +71,6 @@ public class AddToCartTests extends BaseTest {
     @Test(priority = 4)
     public void ATC_04_VerifyAddTwoItemsToCartAndRemoveOneItemFromCartFromProductsPage() {
 
-        validLogin();
         productsPage.addSpecificProductToCart(PRODUCTS_DATA.getJsonData("Item2.Name"));
         productsPage.addSpecificProductToCart(PRODUCTS_DATA.getJsonData("Item3.Name"));
         boolean check1 = productsPage.isProductAddedToCart(PRODUCTS_DATA.getJsonData("Item2.Name"));
@@ -96,7 +93,8 @@ public class AddToCartTests extends BaseTest {
         Assert.assertEquals(check7, "1");
     }
 
-    private void validLogin() {
+    @BeforeMethod
+    public synchronized void validLogin() {
         loginPage.typeUsername(LOGIN_DATA.getJsonData("validUsername"));
         loginPage.typePassword(LOGIN_DATA.getJsonData("validPassword"));
         productsPage = loginPage.clickLoginValid();
