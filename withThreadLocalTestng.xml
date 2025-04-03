@@ -18,4 +18,10 @@
             <class name="com.saucedemo.swagLabs.Features.ShoppingCartTests"/>
         </classes>
     </test> <!-- Test -->
+
+    <test name="CheckoutTests" parallel="methods" thread-count="4">
+        <classes>
+            <class name="com.saucedemo.swagLabs.Features.CheckoutTest"/>
+        </classes>
+    </test> <!-- Test -->
 </suite> <!-- Suite -->
