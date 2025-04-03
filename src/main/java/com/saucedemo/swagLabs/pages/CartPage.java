@@ -16,8 +16,7 @@ public class CartPage extends ElementActions {
 
     private final static By cartItems = By.xpath("//div[@class='cart_item']");
     private final static By cartIconNotification = By.cssSelector(".shopping_cart_badge");
-    private final static By continueShoppingBtn = By.id("continue-shopping");
-    private final static By checkoutBtn = By.cssSelector("checkout");
+    private final static By checkoutBtn = By.id("checkout");
 
     public CartPage(WebDriver webDriver) {
         super(webDriver);
@@ -53,6 +52,7 @@ public class CartPage extends ElementActions {
         return isElementInvisible(cartItems);
     }
 
+    @Step("Click Checkout Button")
     public CheckoutPage clickCheckoutBtn() {
         clickElement(checkoutBtn);
         return new CheckoutPage(driver);
