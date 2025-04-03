@@ -1,0 +1,12 @@
+{
+  "firstName": "Colter",
+  "lastName": "Show",
+  "zipCode": "4647987",
+  "emptyFirstName": "",
+  "emptyLastName": "",
+  "emptyZipCode": "",
+  "orderConfMsg": "Thank you for your order!",
+  "err:firstNameReq": "Error: First Name is required",
+  "err:lastNameReq": "Error: Last Name is required",
+  "err:zipCodeReq": "Error: Postal Code is required"
+}
