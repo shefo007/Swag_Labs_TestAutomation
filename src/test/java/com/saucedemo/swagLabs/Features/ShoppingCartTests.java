@@ -13,12 +13,10 @@ import utils.JsonUtils;
 @Listeners(TestNGListeners.class)
 public class ShoppingCartTests extends BaseTest {
 
-    private static final JsonUtils LOGIN_DATA = new JsonUtils("LoginJsonData");
     private static final JsonUtils PRODUCTS_DATA = new JsonUtils("ProductsJsonData");
-    private ProductsPage productsPage;
     private CartPage cartPage;
 
-    @Test(priority = 1)
+    @Test(groups = "validLogin")
     public void SC_01_VerifyItemAddedToCart() {
 
         productsPage.addSpecificProductToCart(PRODUCTS_DATA.getJsonData("Item2.Name"));
@@ -35,7 +33,7 @@ public class ShoppingCartTests extends BaseTest {
         Assert.assertEquals(itemName, PRODUCTS_DATA.getJsonData("Item2.Name"));
     }
 
-    @Test(priority = 2)
+    @Test(groups = "validLogin")
     public void SC_02_VerifyTwoItemsAddedToCart() {
 
         productsPage.addSpecificProductToCart(PRODUCTS_DATA.getJsonData("Item2.Name"));
@@ -55,7 +53,7 @@ public class ShoppingCartTests extends BaseTest {
         Assert.assertEquals(itemName2, PRODUCTS_DATA.getJsonData("Item3.Name"));
     }
 
-    @Test(priority = 3)
+    @Test(groups = "validLogin")
     public void SC_03_VerifyRemoveItemFromCart() {
 
         productsPage.addSpecificProductToCart(PRODUCTS_DATA.getJsonData("Item2.Name"));
@@ -75,7 +73,7 @@ public class ShoppingCartTests extends BaseTest {
         Assert.assertTrue(check4);
     }
 
-    @Test(priority = 4)
+    @Test(groups = "validLogin")
     public void SC_04_VerifyAddTwoItemsToCartAndRemoveOneItemFromCart() {
 
         productsPage.addSpecificProductToCart(PRODUCTS_DATA.getJsonData("Item2.Name"));
@@ -100,7 +98,7 @@ public class ShoppingCartTests extends BaseTest {
         Assert.assertEquals(itemName, PRODUCTS_DATA.getJsonData("Item3.Name"));
     }
 
-    @Test(priority = 5)
+    @Test(groups = "validLogin")
     public void SC_05VerifyEmptyCart() {
 
         cartPage = productsPage.clickCartIcon();
@@ -115,10 +113,4 @@ public class ShoppingCartTests extends BaseTest {
 
     }
 
-    @BeforeMethod
-    public synchronized void validLogin() {
-        loginPage.typeUsername(LOGIN_DATA.getJsonData("validUsername"));
-        loginPage.typePassword(LOGIN_DATA.getJsonData("validPassword"));
-        productsPage = loginPage.clickLoginValid();
-    }
 }

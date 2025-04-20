@@ -2,9 +2,7 @@ package com.saucedemo.swagLabs.Features;
 
 import com.saucedemo.swagLabs.basetest.BaseTest;
 import com.saucedemo.swagLabs.listeners.TestNGListeners;
-import com.saucedemo.swagLabs.pages.ProductsPage;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import utils.JsonUtils;
@@ -12,11 +10,9 @@ import utils.JsonUtils;
 @Listeners(TestNGListeners.class)
 public class AddToCartTests extends BaseTest {
 
-    private static final JsonUtils LOGIN_DATA = new JsonUtils("LoginJsonData");
     private static final JsonUtils PRODUCTS_DATA = new JsonUtils("ProductsJsonData");
-    private ProductsPage productsPage;
 
-    @Test(priority = 1)
+    @Test(groups = "validLogin")
     public void ATC_01_VerifyAddItemToCart() {
 
         productsPage.addSpecificProductToCart(PRODUCTS_DATA.getJsonData("Item2.Name"));
@@ -30,7 +26,7 @@ public class AddToCartTests extends BaseTest {
         Assert.assertEquals(check3, "1");
     }
 
-    @Test(priority = 2)
+    @Test(groups = "validLogin")
     public void ATC_02_VerifyAddTwoItemsToCart() {
 
         productsPage.addSpecificProductToCart(PRODUCTS_DATA.getJsonData("Item2.Name"));
@@ -47,7 +43,7 @@ public class AddToCartTests extends BaseTest {
         Assert.assertEquals(check4, "2");
     }
 
-    @Test(priority = 3)
+    @Test(groups = "validLogin")
     public void ATC_03_VerifyRemoveItemFromCartFromProductsPage() {
 
         productsPage.addSpecificProductToCart(PRODUCTS_DATA.getJsonData("Item2.Name"));
@@ -68,7 +64,7 @@ public class AddToCartTests extends BaseTest {
 
     }
 
-    @Test(priority = 4)
+    @Test(groups = "validLogin")
     public void ATC_04_VerifyAddTwoItemsToCartAndRemoveOneItemFromCartFromProductsPage() {
 
         productsPage.addSpecificProductToCart(PRODUCTS_DATA.getJsonData("Item2.Name"));
@@ -93,10 +89,4 @@ public class AddToCartTests extends BaseTest {
         Assert.assertEquals(check7, "1");
     }
 
-    @BeforeMethod
-    public synchronized void validLogin() {
-        loginPage.typeUsername(LOGIN_DATA.getJsonData("validUsername"));
-        loginPage.typePassword(LOGIN_DATA.getJsonData("validPassword"));
-        productsPage = loginPage.clickLoginValid();
-    }
 }

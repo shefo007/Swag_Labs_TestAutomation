@@ -11,9 +11,7 @@ import utils.JsonUtils;
 @Listeners(TestNGListeners.class)
 public class LoginTests extends BaseTest {
 
-    private static final JsonUtils LOGIN_DATA = new JsonUtils("LoginJsonData");
-
-    @Test(priority = 1)
+    @Test(groups = "TestLogin")
     public void LG_01verifyLoginWithValidUsernameAndPassword() {
 
         loginPage.typeUsername(LOGIN_DATA.getJsonData("validUsername"));
@@ -24,7 +22,7 @@ public class LoginTests extends BaseTest {
         Assert.assertTrue(actualResult);
     }
 
-    @Test(priority = 2)
+    @Test(groups = "TestLogin")
     public void LG_02verifyLoginWithAnInvalidUsername() {
 
         loginPage.typeUsername(LOGIN_DATA.getJsonData("inValidUsername"));
@@ -35,7 +33,7 @@ public class LoginTests extends BaseTest {
         Assert.assertEquals(actualResult, LOGIN_DATA.getJsonData("invalidUsernameOrPassword"));
     }
 
-    @Test(priority = 3)
+    @Test(groups = "TestLogin")
     public void LG_03LoginWithAnInvalidPassword() {
 
         loginPage.typeUsername(LOGIN_DATA.getJsonData("validUsername"));
@@ -46,7 +44,7 @@ public class LoginTests extends BaseTest {
         Assert.assertEquals(actualResult, LOGIN_DATA.getJsonData("invalidUsernameOrPassword"));
     }
 
-    @Test(priority = 4)
+    @Test(groups = "TestLogin")
     public void LG_04verifyLoginWithBlankUsernameField() {
 
         loginPage.typeUsername(LOGIN_DATA.getJsonData("emptyUsername"));
@@ -57,7 +55,7 @@ public class LoginTests extends BaseTest {
         Assert.assertEquals(actualResult, LOGIN_DATA.getJsonData("usernameRequired"));
     }
 
-    @Test(priority = 5)
+    @Test(groups = "TestLogin")
     public void LG_05verifyLoginWithBlankPasswordField() {
 
         loginPage.typeUsername(LOGIN_DATA.getJsonData("validUsername"));
@@ -68,7 +66,7 @@ public class LoginTests extends BaseTest {
         Assert.assertEquals(actualResult, LOGIN_DATA.getJsonData("passwordRequired"));
     }
 
-    @Test(priority = 6)
+    @Test(groups = "TestLogin")
     public void LG_06verifyPasswordIsMasked() {
 
         loginPage.typePassword(LOGIN_DATA.getJsonData("validPassword"));
@@ -77,7 +75,7 @@ public class LoginTests extends BaseTest {
         Assert.assertTrue(actualResult);
     }
 
-    @Test(priority = 7)
+    @Test(groups = "TestLogin")
     public void LG_07verifyLoginWithValidCredentialsAndPressEnterKey() {
 
         loginPage.typeUsername(LOGIN_DATA.getJsonData("validUsername"));
@@ -88,7 +86,7 @@ public class LoginTests extends BaseTest {
         Assert.assertTrue(actualResult);
     }
 
-    @Test(priority = 8)
+    @Test(groups = "TestLogin")
     public void LG_08verifyLoginWithInvalidCredentialsAndPressEnterKey() {
 
         loginPage.typeUsername(LOGIN_DATA.getJsonData("inValidUsername"));
@@ -99,7 +97,7 @@ public class LoginTests extends BaseTest {
         Assert.assertEquals(actualResult, LOGIN_DATA.getJsonData("invalidUsernameOrPassword"));
     }
 
-    @Test(priority = 9)
+    @Test(groups = "TestLogin")
     public void LG_09verifyUserLogout() {
 
         loginPage.typeUsername(LOGIN_DATA.getJsonData("validUsername"));

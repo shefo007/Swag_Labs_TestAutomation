@@ -1,24 +1,25 @@
 package com.saucedemo.swagLabs.Features;
 
 import com.saucedemo.swagLabs.basetest.BaseTest;
+import com.saucedemo.swagLabs.listeners.TestNGListeners;
 import com.saucedemo.swagLabs.pages.CartPage;
 import com.saucedemo.swagLabs.pages.CheckoutPage;
 import com.saucedemo.swagLabs.pages.ProductsPage;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import utils.JsonUtils;
 
+@Listeners(TestNGListeners.class)
 public class CheckoutTest extends BaseTest {
 
-    private static final JsonUtils LOGIN_DATA = new JsonUtils("LoginJsonData");
     private static final JsonUtils PRODUCTS_DATA = new JsonUtils("ProductsJsonData");
     private static final JsonUtils CHECKOUT_INFO_DATA = new JsonUtils("CheckoutInfoData");
-    private ProductsPage productsPage;
     private CartPage cartPage;
     private CheckoutPage checkoutPage;
 
-    @Test
+    @Test(groups = "validLogin")
     public void TC_01_VerifyCheckoutWithValidData() {
 
         productsPage.addSpecificProductToCart(PRODUCTS_DATA.getJsonData("Item3.Name"));
@@ -38,7 +39,7 @@ public class CheckoutTest extends BaseTest {
         Assert.assertEquals(orderThkMsg, CHECKOUT_INFO_DATA.getJsonData("orderConfMsg"));
     }
 
-    @Test
+    @Test(groups = "validLogin")
     public void TC_02_VerifyCheckoutWithEmptyFirstName() {
 
         productsPage.addSpecificProductToCart(PRODUCTS_DATA.getJsonData("Item3.Name"));
@@ -55,7 +56,7 @@ public class CheckoutTest extends BaseTest {
         Assert.assertEquals(errMsg, CHECKOUT_INFO_DATA.getJsonData("err:firstNameReq"));
     }
 
-    @Test
+    @Test(groups = "validLogin")
     public void TC_03_VerifyCheckoutWithEmptyLastName() {
 
         productsPage.addSpecificProductToCart(PRODUCTS_DATA.getJsonData("Item3.Name"));
@@ -72,7 +73,7 @@ public class CheckoutTest extends BaseTest {
         Assert.assertEquals(errMsg, CHECKOUT_INFO_DATA.getJsonData("err:lastNameReq"));
     }
 
-    @Test
+    @Test(groups = "validLogin")
     public void TC_04_VerifyCheckoutWithEmptyZipCode() {
 
         productsPage.addSpecificProductToCart(PRODUCTS_DATA.getJsonData("Item3.Name"));
@@ -89,10 +90,4 @@ public class CheckoutTest extends BaseTest {
         Assert.assertEquals(errMsg, CHECKOUT_INFO_DATA.getJsonData("err:zipCodeReq"));
     }
 
-    @BeforeMethod
-    public synchronized void validLogin() {
-        loginPage.typeUsername(LOGIN_DATA.getJsonData("validUsername"));
-        loginPage.typePassword(LOGIN_DATA.getJsonData("validPassword"));
-        productsPage = loginPage.clickLoginValid();
-    }
 }
