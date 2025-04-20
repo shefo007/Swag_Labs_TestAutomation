@@ -8,7 +8,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.locators.RelativeLocator;
 
 import java.util.List;
 
@@ -36,8 +35,7 @@ public class CartPage extends ElementActions {
     @Step("Remove specific Item from cart: {0}")
     public void removeSpecificProductFromCart(String productName) {
         LogsUtil.info("Removing " + productName + " from cart");
-        By removeBtn = RelativeLocator.with(By.tagName("button"))
-                .below(By.xpath("//div[.='" + productName + "']"));
+        By removeBtn = By.xpath("//div[.='" + productName + "']/ancestor::div[@class='cart_item']//button");
         clickElement(removeBtn);
     }
 
