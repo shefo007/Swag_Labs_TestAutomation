@@ -7,7 +7,7 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.locators.RelativeLocator;
+
 
 public class ProductsPage extends ElementActions {
 
@@ -50,23 +50,20 @@ public class ProductsPage extends ElementActions {
     @Step("Adding specific Item to cart: {0}")
     public void addSpecificProductToCart(String productName) {
         LogsUtil.info("Adding " + productName + " to cart");
-        By addToCartBtn = RelativeLocator.with(By.tagName("button"))
-                .below(By.xpath("//div[.='" + productName + "']"));
+        By addToCartBtn = By.xpath("//div[.='" + productName + "']/ancestor::div[@class='inventory_item']//button");
         clickElement(addToCartBtn);
     }
 
     @Step("Remove specific Item from cart: {0}")
     public void removeSpecificProductFromCart(String productName) {
         LogsUtil.info("Removing " + productName + " from cart");
-        By removeBtn = RelativeLocator.with(By.tagName("button"))
-                .below(By.xpath("//div[.='" + productName + "']"));
+        By removeBtn = By.xpath("//div[.='" + productName + "']/ancestor::div[@class='inventory_item']//button");
         clickElement(removeBtn);
     }
 
     @Step("Check specific product added to cart: {0}")
     public Boolean isProductAddedToCart(String productName) {
-        By addToCartBtn = RelativeLocator.with(By.tagName("button"))
-                .below(By.xpath("//div[.='" + productName + "']"));
+        By addToCartBtn = By.xpath("//div[.='" + productName + "']/ancestor::div[@class='inventory_item']//button");
         Boolean actualValue = getText(addToCartBtn).equals("Remove");
         LogsUtil.info(productName + " added to cart successfully");
         return actualValue;
@@ -74,8 +71,7 @@ public class ProductsPage extends ElementActions {
 
     @Step("Check specific product removed from cart: {0}")
     public Boolean isProductRemovedFromCart(String productName) {
-        By addToCartBtn = RelativeLocator.with(By.tagName("button"))
-                .below(By.xpath("//div[.='" + productName + "']"));
+        By addToCartBtn = By.xpath("//div[.='" + productName + "']/ancestor::div[@class='inventory_item']//button");
         Boolean actualValue = getText(addToCartBtn).equals("Add to cart");
         LogsUtil.info(productName + " removed from cart successfully");
         return actualValue;
@@ -95,11 +91,5 @@ public class ProductsPage extends ElementActions {
     public Boolean isNotificationVisibleOnCart() {
         return isElementVisible(cartIconNotification);
     }
-
-
-
-
-
-
 
 }
