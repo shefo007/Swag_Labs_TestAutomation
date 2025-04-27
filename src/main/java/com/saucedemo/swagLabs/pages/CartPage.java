@@ -1,6 +1,6 @@
 package com.saucedemo.swagLabs.pages;
 
-import com.saucedemo.swagLabs.elementActions.ElementActions;
+
 import com.saucedemo.swagLabs.utils.BrowserActions;
 import com.saucedemo.swagLabs.utils.LogsUtil;
 import io.qameta.allure.Step;
@@ -11,23 +11,26 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class CartPage extends ElementActions {
+import static com.saucedemo.swagLabs.elementActions.ElementActions.*;
 
+public class CartPage {
+
+    private final WebDriver driver;
     private final static By cartItems = By.xpath("//div[@class='cart_item']");
     private final static By cartIconNotification = By.cssSelector(".shopping_cart_badge");
     private final static By checkoutBtn = By.id("checkout");
 
     public CartPage(WebDriver webDriver) {
-        super(webDriver);
+        this.driver = webDriver;
     }
 
     public List<WebElement> getItemsInCart() {
-        return findElements(cartItems);
+        return findElements(driver, cartItems);
     }
 
     public Item getSpecificItemFromCart(String itemName) {
         By itemLocator = By.xpath("//div[.='" + itemName + "']/ancestor::div[@class='cart_item']");
-        WebElement item = findElement(itemLocator);
+        WebElement item = findElement(driver, itemLocator);
 
         return new Item(item);
     }
@@ -36,23 +39,23 @@ public class CartPage extends ElementActions {
     public void removeSpecificProductFromCart(String productName) {
         LogsUtil.info("Removing " + productName + " from cart");
         By removeBtn = By.xpath("//div[.='" + productName + "']/ancestor::div[@class='cart_item']//button");
-        clickElement(removeBtn);
+        clickElement(driver, removeBtn);
     }
 
     @Step("Check specific product added to cart: {0}")
     public boolean isSpecificItemRemovedFromCart(String productName) {
         By productNameLocator = By.xpath("//div[.='" + productName + "']");
-        return isElementInvisible(productNameLocator);
+        return isElementInvisible(driver, productNameLocator);
     }
 
     @Step("Check is cart empty")
     public boolean isCartEmpty() {
-        return isElementInvisible(cartItems);
+        return isElementInvisible(driver, cartItems);
     }
 
     @Step("Click Checkout Button")
     public CheckoutPage clickCheckoutBtn() {
-        clickElement(checkoutBtn);
+        clickElement(driver, checkoutBtn);
         return new CheckoutPage(driver);
     }
 
@@ -63,7 +66,7 @@ public class CartPage extends ElementActions {
     public String getNotificationTxtOnCartIcon() {
         try {
             if (isNotificationVisibleOnCart())
-                return getText(cartIconNotification);
+                return getText(driver, cartIconNotification);
         } catch (NoSuchElementException e) {
             LogsUtil.error(e.getMessage());
         }
@@ -72,7 +75,7 @@ public class CartPage extends ElementActions {
     }
 
     public Boolean isNotificationVisibleOnCart() {
-        return isElementVisible(cartIconNotification);
+        return isElementVisible(driver, cartIconNotification);
     }
 
     public static class Item {

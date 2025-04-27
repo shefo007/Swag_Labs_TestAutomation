@@ -5,7 +5,7 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ThreadGuard;
 
-public class DriverManager {
+public abstract class DriverManager {
 
     private final static ThreadLocal<WebDriver> threadDriver = new ThreadLocal<>();
 

@@ -8,9 +8,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 
+import static com.saucedemo.swagLabs.elementActions.ElementActions.*;
 
-public class ProductsPage extends ElementActions {
 
+public class ProductsPage {
+
+    private final WebDriver driver;
     private final static By productsList = By.className("inventory_list");
     private final static By burgerMenuBtn = By.id("react-burger-menu-btn");
     private final static By logoutLink = By.id("logout_sidebar_link");
@@ -18,7 +21,7 @@ public class ProductsPage extends ElementActions {
     private final static By cartIconNotification = By.cssSelector(".shopping_cart_badge");
 
     public ProductsPage(WebDriver webDriver) {
-        super(webDriver);
+        this.driver = webDriver;
     }
 
     @Step("Check products page url")
@@ -27,23 +30,23 @@ public class ProductsPage extends ElementActions {
     }
 
     public Boolean isProductsListVisible() {
-        return isElementVisible(productsList);
+        return isElementVisible(driver, productsList);
     }
 
     @Step("Click on Burger Menu Icon")
     public void clickBurgerMenuBtn() {
-        clickElement(burgerMenuBtn);
+        clickElement(driver, burgerMenuBtn);
     }
 
     @Step("Click on Logout")
     public LoginPage clickLogout() {
-        clickElement(logoutLink);
+        clickElement(driver, logoutLink);
         return new LoginPage(driver);
     }
 
     @Step("Click on CartPage Icon")
     public CartPage clickCartIcon() {
-        clickElement(cartIcon);
+        clickElement(driver, cartIcon);
         return new CartPage(driver);
     }
 
@@ -51,20 +54,20 @@ public class ProductsPage extends ElementActions {
     public void addSpecificProductToCart(String productName) {
         LogsUtil.info("Adding " + productName + " to cart");
         By addToCartBtn = By.xpath("//div[.='" + productName + "']/ancestor::div[@class='inventory_item']//button");
-        clickElement(addToCartBtn);
+        clickElement(driver, addToCartBtn);
     }
 
     @Step("Remove specific Item from cart: {0}")
     public void removeSpecificProductFromCart(String productName) {
         LogsUtil.info("Removing " + productName + " from cart");
         By removeBtn = By.xpath("//div[.='" + productName + "']/ancestor::div[@class='inventory_item']//button");
-        clickElement(removeBtn);
+        clickElement(driver, removeBtn);
     }
 
     @Step("Check specific product added to cart: {0}")
     public Boolean isProductAddedToCart(String productName) {
         By addToCartBtn = By.xpath("//div[.='" + productName + "']/ancestor::div[@class='inventory_item']//button");
-        Boolean actualValue = getText(addToCartBtn).equals("Remove");
+        Boolean actualValue = getText(driver, addToCartBtn).equals("Remove");
         LogsUtil.info(productName + " added to cart successfully");
         return actualValue;
     }
@@ -72,7 +75,7 @@ public class ProductsPage extends ElementActions {
     @Step("Check specific product removed from cart: {0}")
     public Boolean isProductRemovedFromCart(String productName) {
         By addToCartBtn = By.xpath("//div[.='" + productName + "']/ancestor::div[@class='inventory_item']//button");
-        Boolean actualValue = getText(addToCartBtn).equals("Add to cart");
+        Boolean actualValue = getText(driver, addToCartBtn).equals("Add to cart");
         LogsUtil.info(productName + " removed from cart successfully");
         return actualValue;
     }
@@ -80,7 +83,7 @@ public class ProductsPage extends ElementActions {
     public String getNotificationTxtOnCartIcon() {
         try {
             if (isNotificationVisibleOnCart())
-                return getText(cartIconNotification);
+                return getText(driver, cartIconNotification);
         } catch (NoSuchElementException e) {
             LogsUtil.error(e.getMessage());
         }
@@ -89,7 +92,7 @@ public class ProductsPage extends ElementActions {
     }
 
     public Boolean isNotificationVisibleOnCart() {
-        return isElementVisible(cartIconNotification);
+        return isElementVisible(driver, cartIconNotification);
     }
 
 }
