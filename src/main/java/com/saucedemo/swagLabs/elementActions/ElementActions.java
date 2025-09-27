@@ -14,52 +14,50 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.List;
 
-
 public class ElementActions {
 
-    private ElementActions() {
-        throw new AssertionError();
+    protected WebDriver driver;
+    protected static WebDriverWait wait;
+
+    public ElementActions(WebDriver webDriver) {
+        this.driver = webDriver;
+        wait = new WebDriverWait(driver, Duration.ofSeconds(Waits.NUMBER_OF_SECONDS));
     }
 
-    public static WebElement findElement(WebDriver driver, By locator) {
+    protected WebElement findElement(By locator) {
         Waits.waitForElementVisible(driver, locator);
         Scrolling.scrollToElement(driver, locator);
         return driver.findElement(locator);
     }
 
-    public static List<WebElement> findElements(WebDriver driver, By locator) {
+    protected List<WebElement> findElements(By locator) {
         Waits.waitForElementsVisible(driver, locator);
         return driver.findElements(locator);
     }
 
-    public static void typeTxt(WebDriver driver, By locator, String txt) {
+    protected void typeTxt(By locator, String txt) {
         driver.findElement(locator).clear();
-        findElement(driver, locator).sendKeys(txt);
+        findElement(locator).sendKeys(txt);
         LogsUtil.info("Type data: ", txt, " in the field: ", locator.toString());
     }
 
-    public static void clickElement(WebDriver driver, By locator) {
+    protected void clickElement(By locator) {
         Waits.waitForElementClickable(driver, locator);
         driver.findElement(locator).click();
         LogsUtil.info("Click on ", locator.toString());
     }
 
-    public static boolean isElementVisible(WebDriver driver, By locator) {
+    protected boolean isElementVisible(By locator) {
         try {
-            WebElement element = Waits.waitForElementVisible(driver, locator);
-            if (element.isDisplayed()) {
-                return true;
-            }
+            return wait.until(ExpectedConditions.visibilityOfElementLocated(locator)).isDisplayed();
         } catch (TimeoutException e) {
             LogsUtil.warn(e.getMessage());
             return false;
         }
-        return false;
     }
 
-    public static boolean isElementInvisible(WebDriver driver, By locator) {
+    protected boolean isElementInvisible(By locator) {
         try {
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Waits.NUMBER_OF_SECONDS));
             return wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
         } catch (TimeoutException e) {
             LogsUtil.warn(e.getMessage());
@@ -68,11 +66,11 @@ public class ElementActions {
     }
 
 
-    public static String getText(WebDriver driver, By locator) {
-        return findElement(driver, locator).getText();
+    protected String getText(By locator) {
+        return findElement(locator).getText();
     }
 
-    public static Actions action(WebDriver driver) {
+    protected Actions action() {
         return new Actions(driver);
     }
 
