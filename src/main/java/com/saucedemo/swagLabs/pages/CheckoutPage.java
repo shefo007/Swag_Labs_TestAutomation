@@ -1,13 +1,15 @@
 package com.saucedemo.swagLabs.pages;
 
-import com.saucedemo.swagLabs.elementActions.ElementActions;
 import com.saucedemo.swagLabs.utils.BrowserActions;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class CheckoutPage extends ElementActions {
+import static com.saucedemo.swagLabs.elementActions.ElementActions.*;
 
+public class CheckoutPage {
+
+    private final WebDriver driver;
     private final static By firstNameField = By.id("first-name");
     private final static By lastNameField = By.id("last-name");
     private final static By postalField = By.id("postal-code");
@@ -18,7 +20,7 @@ public class CheckoutPage extends ElementActions {
     private final static By errorMsg = By.cssSelector("h3[data-test='error']");
 
     public CheckoutPage(WebDriver webDriver) {
-        super(webDriver);
+        this.driver = webDriver;
     }
 
     public boolean isCheckoutPageVisible() {
@@ -26,33 +28,33 @@ public class CheckoutPage extends ElementActions {
     }
 
     public boolean isOrderCompleted() {
-        return isElementVisible(orderConformation);
+        return isElementVisible(driver, orderConformation);
     }
 
     public String getOrderConfirmationMsg() {
-        return getText(orderConformationMSG);
+        return getText(driver, orderConformationMSG);
     }
 
     public String getErrorMsg() {
-        return getText(errorMsg);
+        return getText(driver, errorMsg);
     }
 
     @Step("Enter Checkout Info")
     public void fillInfo(String firstName, String lastName, String postalCode) {
-        typeTxt(firstNameField, firstName);
-        typeTxt(lastNameField, lastName);
-        typeTxt(postalField, postalCode);
+        typeTxt(driver, firstNameField, firstName);
+        typeTxt(driver, lastNameField, lastName);
+        typeTxt(driver, postalField, postalCode);
     }
 
     @Step("Click continue button")
     public CheckoutPage clickContinue() {
-        clickElement(continueBtn);
+        clickElement(driver, continueBtn);
         return this;
     }
 
     @Step("Click finish button")
     public void clickFinish() {
-        clickElement(finishBtn);
+        clickElement(driver, finishBtn);
     }
 
 
