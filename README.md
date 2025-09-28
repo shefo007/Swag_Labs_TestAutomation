@@ -13,9 +13,7 @@
 4. [Prerequisites](#prerequisites)  
 5. [Setup & Installation](#setup--installation)  
 6. [Usage / Running Tests](#usage--running-tests)  
-7. [Folder Structure](#folder-structure)  
-8. [Contributing](#contributing)  
-9. [License](#license)  
+7. [Folder Structure](#folder-structure)
 
 ---
 
